@@ -124,7 +124,7 @@ class XeroOauthTokensTable extends Table
     {
         return $this->find()
             ->select($select)
-            ->disableHydration()
+            ->enableHydration(false)
             ->first();
     }
 
